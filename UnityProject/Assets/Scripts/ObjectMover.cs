@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class ObjectMover : MonoBehaviour
 {
-    public delegate void OnWaveDelegate(Vector2 position, float force, float range);
+    public delegate void OnWaveDelegate(Vector2 position, float force, float range, AnimationCurve waveStrenghCurve);
     public static OnWaveDelegate waveDelegate;
 
     public float force = 10;
     public float range = 10;
     public int rippleCount = 3;
     public float rippleDelay = 1;
+    public AnimationCurve waveStrenghCurve = AnimationCurve.EaseInOut(1,1,0,0);
 
     public Wave prefab;
 
@@ -23,6 +24,6 @@ public class ObjectMover : MonoBehaviour
 
     public void Wave(Vector2 position)
     {
-        waveDelegate(position, force, range);
+        waveDelegate(position, force, range, waveStrenghCurve);
     }
 }

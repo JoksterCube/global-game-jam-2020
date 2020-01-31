@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Wave : MonoBehaviour
 {
-    ObjectMover objectMover;
-
     public int RippleCount { get; set; }
     public float RippleDelay { get; set; }
 
+    ObjectMover objectMover;
+
+    public Transform ripple;
+
+
     private float nextWaveTime = 0;
+
     private void Awake()
     {
         objectMover = GetComponentInParent<ObjectMover>();
@@ -21,12 +25,18 @@ public class Wave : MonoBehaviour
         {
             if (nextWaveTime <= Time.time)
             {
-                objectMover.Wave(transform.position);
+                Ripple();
                 nextWaveTime = Time.time + RippleDelay;
                 RippleCount--;
             }
         }
         else
             Destroy(gameObject);
+    }
+
+    private void Ripple()
+    {
+        objectMover.Wave(transform.position);
+
     }
 }

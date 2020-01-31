@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(ObjectMover))]
 public class ClickRegistration : MonoBehaviour
 {
     public Camera cam;
@@ -15,7 +16,6 @@ public class ClickRegistration : MonoBehaviour
 
     private void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Vector2 wavePosition = Coordinates();

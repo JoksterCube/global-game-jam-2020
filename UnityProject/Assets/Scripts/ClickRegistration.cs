@@ -5,6 +5,26 @@ using UnityEngine;
 public class ClickRegistration : MonoBehaviour
 {
     public Camera cam;
+    public bool log = false;
+
+    private ObjectMover objectMover;
+    private void Awake()
+    {
+        objectMover = GetComponent<ObjectMover>();
+    }
+
+    private void Update()
+    {
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Vector2 wavePosition = Coordinates();
+            if (log)
+                Debug.Log("Koordinatės:" + wavePosition);
+            objectMover.StartWaveAtPosition(wavePosition);
+        }
+    }
+
     public Vector2 Coordinates()
     {
         var mousePos = Input.mousePosition;
@@ -12,19 +32,5 @@ public class ClickRegistration : MonoBehaviour
 
         return p;
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            Debug.Log("Koordinatės:"+Coordinates());
-        }
-    }
 }

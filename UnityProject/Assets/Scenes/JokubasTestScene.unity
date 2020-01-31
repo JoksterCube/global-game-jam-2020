@@ -152,6 +152,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   range: 10
+  rippleCount: 3
+  rippleDelay: 1
+  prefab: {fileID: 3912551643920391114, guid: c87f005f522f5ad40a5ed0ca476be072, type: 3}
 --- !u!4 &1129379690
 Transform:
   m_ObjectHideFlags: 0

@@ -475,10 +475,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b4e4a67699df0b409f5331fc69fdbfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 50
-  range: 10
+  force: 100
+  range: 5
   rippleCount: 3
-  rippleDelay: 2
+  rippleTime: 2
+  rippleDelay: 0.75
   waveStrenghCurve:
     serializedVersion: 2
     m_Curve:

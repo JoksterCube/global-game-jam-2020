@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WatterMaterial
+  m_Name: WaterMaterial
   m_Shader: {fileID: -6465566751694194690, guid: 78cac1e81c03b5549ad3d6a55f29c1d7,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
@@ -77,7 +77,7 @@ Material:
     - Vector1_2BFA8988: 0.05
     - Vector1_5771B55E: 0.1
     - Vector1_67D94E82: 2
-    - Vector1_7966C220: -18.23
+    - Vector1_7966C220: 5.29
     - Vector1_9D3AEE6E: 5
     - Vector1_A0CFA4A2: 2
     - Vector1_B1F77AD1: 2.77

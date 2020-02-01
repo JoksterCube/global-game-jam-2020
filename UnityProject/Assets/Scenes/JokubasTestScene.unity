@@ -353,6 +353,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: StrawTrap (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 540552f7cc804a34fb567f8752f91d02,
+        type: 3}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b76ec6318374b7c41bf324a833003eb8, type: 3}
 --- !u!1001 &1117675894
@@ -490,6 +511,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StrawTrap
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 540552f7cc804a34fb567f8752f91d02,
+        type: 3}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.043727823
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b76ec6318374b7c41bf324a833003eb8, type: 3}
@@ -633,6 +675,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: StrawTrap (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 540552f7cc804a34fb567f8752f91d02,
+        type: 3}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.383811
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.4637929
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.7075472
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b76ec6318374b7c41bf324a833003eb8, type: 3}
 --- !u!1001 &1550072092
@@ -702,6 +765,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: StrawTrap (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 540552f7cc804a34fb567f8752f91d02,
+        type: 3}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.6698113
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.666584
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749198118788091611, guid: b76ec6318374b7c41bf324a833003eb8,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.45812565
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b76ec6318374b7c41bf324a833003eb8, type: 3}
 --- !u!1 &2057444746
@@ -715,6 +799,7 @@ GameObject:
   - component: {fileID: 2057444749}
   - component: {fileID: 2057444748}
   - component: {fileID: 2057444747}
+  - component: {fileID: 2057444750}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -787,6 +872,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2057444750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057444746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_CameraOutput: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1001 &1074769589396132491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -853,6 +969,67 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Turtoise
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329877376318340206, guid: 7f0fb2d781671f8459a0eb274f29833e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582464184293210862, guid: 7f0fb2d781671f8459a0eb274f29833e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437976529997567658, guid: 7f0fb2d781671f8459a0eb274f29833e,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437976529997567658, guid: 7f0fb2d781671f8459a0eb274f29833e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437976529997567658, guid: 7f0fb2d781671f8459a0eb274f29833e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3d1bb6d49c89eff4a9e2f3fcea80ea34,
+        type: 3}
+    - target: {fileID: 4437976529997567658, guid: 7f0fb2d781671f8459a0eb274f29833e,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437976529997567658, guid: 7f0fb2d781671f8459a0eb274f29833e,
+        type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437976529997567658, guid: 7f0fb2d781671f8459a0eb274f29833e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437976529997567658, guid: 7f0fb2d781671f8459a0eb274f29833e,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437976529997567658, guid: 7f0fb2d781671f8459a0eb274f29833e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 5497789011131831812, guid: 7f0fb2d781671f8459a0eb274f29833e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732061352969389252, guid: 7f0fb2d781671f8459a0eb274f29833e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f0fb2d781671f8459a0eb274f29833e, type: 3}

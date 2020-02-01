@@ -34,16 +34,8 @@ public class MovableObject : MonoBehaviour
         Push(direction, pushForce);
         Rotate(strengh);
     }
-    private void Push(Vector2 direction, float multiplier)
-    {
-        Vector2 force = direction.normalized * multiplier;
-        rb.AddForce(force);
-    }
-    private void Rotate(float strengh)
-    {
-        float torque = Random.Range(-torqueLimit, torqueLimit) * strengh;
-        rb.AddTorque(torque);
-    }
+    private void Push(Vector2 direction, float multiplier) => rb.AddForce(direction.normalized * multiplier);
+    private void Rotate(float strengh) => rb.AddTorque(Random.Range(-torqueLimit, torqueLimit) * strengh);
 
     private float GetCorrectValue(Vector2 position, float range, AnimationCurve waveStrenghCurve)
     {

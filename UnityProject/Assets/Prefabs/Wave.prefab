@@ -43,3 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85783dd9bfb42d249bc46547f9e2ee2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ripplePrefab: {fileID: -6140056747852556978, guid: da3f192010c3e204a8af074167d3b236,
+    type: 3}

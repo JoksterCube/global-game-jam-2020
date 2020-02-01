@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class Wave : MonoBehaviour
 {
+    private int rippleCount;
+    private float rippleTime;
+    private float rippleDelay;
+    private float rippleRange;
+    private AnimationCurve waveStrenghCurve;
+
     ObjectMover objectMover;
 
-    public int RippleCount { get; set; }
-    public float RippleDelay { get; set; }
-
+    public Ripple ripplePrefab;
     private float nextWaveTime = 0;
+
     private void Awake()
     {
         objectMover = GetComponentInParent<ObjectMover>();
@@ -17,16 +22,32 @@ public class Wave : MonoBehaviour
 
     public void Update()
     {
-        if (RippleCount > 0)
+        if (waveStrenghCurve is null)
+            return;
+        if (rippleCount > 0)
         {
             if (nextWaveTime <= Time.time)
             {
-                objectMover.Wave(transform.position);
-                nextWaveTime = Time.time + RippleDelay;
-                RippleCount--;
+                Ripple();
+                nextWaveTime = Time.time + rippleDelay;
+                rippleCount--;
             }
         }
         else
-            Destroy(gameObject);
+            Destroy(gameObject, rippleTime);
+    }
+
+    public void SetValues(int rippleCount, float rippleTime, float rippleDelay, float rippleRange, AnimationCurve waveStrenghCurve)
+    {
+        this.rippleCount = rippleCount;
+        this.rippleTime = rippleTime;
+        this.rippleDelay = rippleDelay;
+        this.rippleRange = rippleRange;
+        this.waveStrenghCurve = waveStrenghCurve;
+    }
+    private void Ripple()
+    {
+        Ripple ripple = Instantiate(ripplePrefab, transform.position, Quaternion.identity, transform) as Ripple;
+        ripple.SetValues(rippleRange, rippleTime, waveStrenghCurve, objectMover);
     }
 }

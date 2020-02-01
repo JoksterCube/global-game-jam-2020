@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class TurtleFacts : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public List<string> randomFacts;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public List<string> meaningfulThoughts;
 }

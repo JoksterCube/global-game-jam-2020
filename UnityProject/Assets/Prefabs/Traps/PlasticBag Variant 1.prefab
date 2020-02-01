@@ -139,6 +139,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlasticBag Variant 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5035886765193210380, guid: 3f35703a9e846f049b68706cce4e7750,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5035886765193210381, guid: 3f35703a9e846f049b68706cce4e7750,
         type: 3}
       propertyPath: amplitude

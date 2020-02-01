@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1766749140}
   - component: {fileID: 1766749137}
   - component: {fileID: 1766749141}
+  - component: {fileID: 6103771475959254510}
   m_Layer: 0
   m_Name: Turtoise
   m_TagString: Untagged
@@ -122,7 +123,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   torqueLimit: 10
---- !u!114 &1766749141
+--- !u!58 &1766749141
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074769588362389758}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.6
+--- !u!114 &6103771475959254510
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,7 +148,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1074769588362389758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42c4dc7677403ac4aabe99198ffd03d8, type: 3}
+  m_Script: {fileID: 11500000, guid: dcf87aa7a0ed8eb4dbc3f45b0c387b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1074769588370774355

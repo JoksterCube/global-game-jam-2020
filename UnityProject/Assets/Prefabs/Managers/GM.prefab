@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6125598153729951018}
   - component: {fileID: 6125598153729951017}
   - component: {fileID: 6125598153729951019}
+  - component: {fileID: 993469545}
+  - component: {fileID: 993469549}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -44,11 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b4e4a67699df0b409f5331fc69fdbfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 100
-  range: 5
+  force: 200
+  range: 10
   rippleCount: 3
   rippleTime: 2
-  rippleDelay: 0.75
+  rippleDelay: 0.5
   waveStrenghCurve:
     serializedVersion: 2
     m_Curve:
@@ -88,3 +90,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   log: 0
+--- !u!114 &993469545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6125598153729951016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9d513509576eb4bac20a00c140b7e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &993469549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6125598153729951016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 069db6483021eed42b0241b80bd23b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dangerIndicator: {fileID: 0}
+  regenerationSpeed: 0.1
+  losingSpeed: 0.33
+  delayUntilRegeneration: 1

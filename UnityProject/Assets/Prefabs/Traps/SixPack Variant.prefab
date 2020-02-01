@@ -170,6 +170,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SixPack Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8850422499980097117, guid: 8f11212d980a9f14a8fd6284e3e0989b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 8850422500273702355, guid: 8f11212d980a9f14a8fd6284e3e0989b,
         type: 3}
       propertyPath: m_Sprite

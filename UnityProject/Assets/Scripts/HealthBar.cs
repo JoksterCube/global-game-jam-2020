@@ -8,9 +8,13 @@ public class HealthBar : MonoBehaviour
     public void Setup(HealthSystem hpSystem)
     {
         this.hpSystem = hpSystem;
+        hpSystem.OnHealthChange += HealthSystem_OnHealthChange;
+    }
+    private void HealthSystem_OnHealthChange(object sender, System.EventArgs e)
+    {
+        transform.Find("Bar").localScale = new Vector3(hpSystem.GetHealthPercent(), 1);
     }
     private void Update()
     {
-        transform.Find("Bar").localScale = new Vector3(hpSystem.GetHealthPercent(), 1);
     }
 }

@@ -1,5 +1,7 @@
-﻿public class HealthSystem
+﻿using System;
+public class HealthSystem
 {
+    public event EventHandler OnHealthChange;
     private int health;
     public int healthMax;
     public HealthSystem(int healthMax)
@@ -23,6 +25,10 @@
             health = 0;
 
         }
+        if(OnHealthChange!=null)
+        {
+            OnHealthChange(this, EventArgs.Empty);
+        }
     }
     public void Heal(int healAmount)
     {
@@ -30,6 +36,10 @@
         if (health > healthMax)
         {
             health = healthMax;
+        }
+        if(OnHealthChange != null)
+        {
+            OnHealthChange(this, EventArgs.Empty);
         }
     }
 }

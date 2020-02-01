@@ -11,7 +11,6 @@ public class HealthBar : MonoBehaviour
     }
     private void Update()
     {
-        if (hpSystem is null) return;
         transform.Find("Bar").localScale = new Vector3(hpSystem.GetHealthPercent(), 1);
     }
 }

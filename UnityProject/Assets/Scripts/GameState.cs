@@ -7,16 +7,20 @@ public class GameState : MonoBehaviour
 {
     public GameObject VicScreen;
     public GameObject DefScreen;
-    //public HealthBar healthBar;
+    public HealthBar hpBar;
     //public HealthSystem hpSystem;
     
     // Start is called before the first frame update
     void Start()
     {
-        //hpSystem = new HealthSystem(100);
-        //healthBar.Setup(hpSystem);
-        //Debug.Log("Health:" + hpSystem.GetHealth());
-       
+        HealthSystem hpSystem = new HealthSystem(100);
+        hpBar.Setup(hpSystem);
+        Debug.Log("Health:" + hpSystem.GetHealth());
+        hpSystem.Damage(30);
+        Debug.Log("Health:" + hpSystem.GetHealth());
+        hpSystem.Heal(20);
+        Debug.Log("Health:" + hpSystem.GetHealth());
+
 
     }
 
@@ -37,6 +41,7 @@ public class GameState : MonoBehaviour
     public void DEFEAT()
     {
         DefScreen.transform.position = new Vector3(0, 0, -9);
+        
         
         Debug.Log("L");
     }

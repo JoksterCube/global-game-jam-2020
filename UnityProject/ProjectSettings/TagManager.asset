@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -38,7 +39,10 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
+  - name: BG2
+    uniqueID: 287945931
+    locked: 0
+  - name: BG1
     uniqueID: 3683003395
     locked: 0
   - name: Default

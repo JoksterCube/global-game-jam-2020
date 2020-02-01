@@ -10,34 +10,26 @@ public class GameState : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Finish")
-        {
-            VICTORY();
-        }
-        if(collision.gameObject.tag == "Enemy")
-        {
-            DEFEAT();
-        }
-    }
-    void VICTORY()
+
+    public void VICTORY()
     {
         VicScreen.transform.position = new Vector3(0, 0, -1);
+        VicScreen.SetActive(true);
         Debug.Log("W");
     }
-    void DEFEAT()
+    public void DEFEAT()
     {
         DefScreen.transform.position = new Vector3(0, 0, -1);
+        DefScreen.SetActive(true);
         Debug.Log("L");
     }
-    
+
 }

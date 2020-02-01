@@ -82,7 +82,7 @@ Material:
     - Vector1_A0CFA4A2: 2
     - Vector1_B1F77AD1: 2.77
     - Vector1_BCFDEEDC: 1
-    - Vector1_FC32EF2A: 2
+    - Vector1_FC32EF2A: 5.41
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -102,7 +102,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_26F5BC1: {r: 1.5157166, g: 1.5157166, b: 1.5157166, a: 1}
-    - Color_E11852B8: {r: 0, g: 0.39803922, b: 0.5, a: 0.46666667}
+    - Color_E11852B8: {r: 0.04779493, g: 0.17240314, b: 0.20483541, a: 1}
     - Vector2_13857DA3: {r: 10, g: 10, b: 0, a: 0}
     - Vector2_A459BA6F: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_A67D5D63: {r: 0.1, g: 0.1, b: 0, a: 0}

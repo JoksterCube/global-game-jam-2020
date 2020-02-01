@@ -17,6 +17,7 @@ public class Ripple : MonoBehaviour
     }
     private void Update()
     {
+        if (curve is null) return;
         if (timeSinceStart > time)
             Stop();
         float scale = GetNewScale(timeSinceStart);

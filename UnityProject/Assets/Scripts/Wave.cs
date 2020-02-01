@@ -11,13 +11,27 @@ public class Wave : MonoBehaviour
     private AnimationCurve waveStrenghCurve;
 
     ObjectMover objectMover;
+    AudioManager audioManager;
+    AudioSource audioSource;
 
     public Ripple ripplePrefab;
     private float nextWaveTime = 0;
 
+    private float audioEnd = float.MaxValue;
+
     private void Awake()
     {
         objectMover = GetComponentInParent<ObjectMover>();
+        audioSource = GetComponent<AudioSource>();
+        audioManager = FindObjectsOfType<AudioManager>()?[0];
+    }
+
+    public void Start()
+    {
+        AudioClip clip = audioManager.GetRippleSound();
+        audioSource.clip = clip;
+        audioSource.Play();
+        audioEnd = Time.time + clip.length;
     }
 
     public void Update()
@@ -33,7 +47,7 @@ public class Wave : MonoBehaviour
                 rippleCount--;
             }
         }
-        else
+        else if (audioEnd <= Time.time)
             Destroy(gameObject, rippleTime);
     }
 

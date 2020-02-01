@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public List<AudioClip> rippleSounds;
+    public AudioClip mainTheme;
+    public AudioClip deathClip;
+    public AudioClip victoryClip;
 
-    // Update is called once per frame
-    void Update()
+    public AudioSource musicSource;
+
+    public AudioClip GetRippleSound()
     {
-        
+        int index = Random.Range(0, rippleSounds.Count);
+
+        return rippleSounds[index];
     }
 }
+

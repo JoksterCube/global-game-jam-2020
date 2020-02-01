@@ -11,6 +11,7 @@ public class CameraFollower : MonoBehaviour
     public float speed;
 
     [Header("Corners")]
+    public bool useCorners;
     public Vector2 topLeftCorner;
     public Vector2 bottomRightCorner;
 
@@ -24,7 +25,7 @@ public class CameraFollower : MonoBehaviour
         if (followee is null)
             return;
 
-        float step = 1 / speed * Time.deltaTime;
+        float step = speed * Time.deltaTime;
 
         Vector2 topLeft = cam.ViewportToWorldPoint(Vector3.up);
         Vector2 bottomRight = cam.ViewportToWorldPoint(Vector3.right);
@@ -34,10 +35,13 @@ public class CameraFollower : MonoBehaviour
         float half_y = y / 2;
 
         Vector2 targetPosition = followee.position;
-        targetPosition.x = targetPosition.x < topLeftCorner.x + half_x ? topLeftCorner.x + half_x : targetPosition.x;
-        targetPosition.x = targetPosition.x > bottomRightCorner.x - half_x ? bottomRightCorner.x - half_x : targetPosition.x;
-        targetPosition.y = targetPosition.y > topLeftCorner.y - half_y ? topLeftCorner.y - half_y : targetPosition.y;
-        targetPosition.y = targetPosition.y < bottomRightCorner.y + half_y ? bottomRightCorner.y + half_y : targetPosition.y;
+        if (useCorners)
+        {
+            targetPosition.x = targetPosition.x < topLeftCorner.x + half_x ? topLeftCorner.x + half_x : targetPosition.x;
+            targetPosition.x = targetPosition.x > bottomRightCorner.x - half_x ? bottomRightCorner.x - half_x : targetPosition.x;
+            targetPosition.y = targetPosition.y > topLeftCorner.y - half_y ? topLeftCorner.y - half_y : targetPosition.y;
+            targetPosition.y = targetPosition.y < bottomRightCorner.y + half_y ? bottomRightCorner.y + half_y : targetPosition.y;
+        }
         transform.position = Vector3.Slerp((Vector2)transform.position, targetPosition, step) + Vector3.forward * transform.position.z;
     }
 

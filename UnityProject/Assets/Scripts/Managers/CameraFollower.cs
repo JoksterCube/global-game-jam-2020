@@ -10,14 +10,19 @@ public class CameraFollower : MonoBehaviour
     public Transform followee;
     public float speed;
 
-    [Header("Corners")]
-    public bool useCorners;
-    public Vector2 topLeftCorner;
-    public Vector2 bottomRightCorner;
+    public Vector2 topBottomBoundaries;
+
+    public float sideScrollerSpeed = 1;
+    private float sideScrollerProgressionX = -10;
 
     private void Awake()
     {
         cam = GetComponent<Camera>();
+    }
+
+    private void Update()
+    {
+        sideScrollerProgressionX += speed * Time.deltaTime;
     }
 
     private void LateUpdate()
@@ -35,13 +40,10 @@ public class CameraFollower : MonoBehaviour
         float half_y = y / 2;
 
         Vector2 targetPosition = followee.position;
-        if (useCorners)
-        {
-            targetPosition.x = targetPosition.x < topLeftCorner.x + half_x ? topLeftCorner.x + half_x : targetPosition.x;
-            targetPosition.x = targetPosition.x > bottomRightCorner.x - half_x ? bottomRightCorner.x - half_x : targetPosition.x;
-            targetPosition.y = targetPosition.y > topLeftCorner.y - half_y ? topLeftCorner.y - half_y : targetPosition.y;
-            targetPosition.y = targetPosition.y < bottomRightCorner.y + half_y ? bottomRightCorner.y + half_y : targetPosition.y;
-        }
+        targetPosition.x = targetPosition.x < sideScrollerProgressionX + half_x ? sideScrollerProgressionX + half_x : targetPosition.x;
+
+        targetPosition.y = targetPosition.y < topBottomBoundaries.x + half_y ? topBottomBoundaries.x + half_y : targetPosition.y;
+        targetPosition.y = targetPosition.y > topBottomBoundaries.y - half_y ? topBottomBoundaries.y - half_y : targetPosition.y;
         transform.position = Vector3.Slerp((Vector2)transform.position, targetPosition, step) + Vector3.forward * transform.position.z;
     }
 

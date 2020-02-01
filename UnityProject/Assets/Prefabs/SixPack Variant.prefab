@@ -191,6 +191,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.7924528
       objectReference: {fileID: 0}
+    - target: {fileID: 8850422500273702355, guid: 8f11212d980a9f14a8fd6284e3e0989b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8850422500273702356, guid: 8f11212d980a9f14a8fd6284e3e0989b,
         type: 3}
       propertyPath: m_LocalRotation.z

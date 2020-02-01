@@ -32,6 +32,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlasticBag Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5789828187975544497, guid: 14546d729775e0840af03d3ec929a970,
+        type: 3}
+      propertyPath: amplitude
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5789828187975544503, guid: 14546d729775e0840af03d3ec929a970,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -50,22 +55,22 @@ PrefabInstance:
     - target: {fileID: 5789828187975544503, guid: 14546d729775e0840af03d3ec929a970,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5789828187975544503, guid: 14546d729775e0840af03d3ec929a970,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5789828187975544503, guid: 14546d729775e0840af03d3ec929a970,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.032640968
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5789828187975544503, guid: 14546d729775e0840af03d3ec929a970,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9994672
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5789828187975544503, guid: 14546d729775e0840af03d3ec929a970,
         type: 3}
@@ -85,7 +90,7 @@ PrefabInstance:
     - target: {fileID: 5789828187975544503, guid: 14546d729775e0840af03d3ec929a970,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 3.7410002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5789828188285902137, guid: 14546d729775e0840af03d3ec929a970,
         type: 3}
@@ -122,6 +127,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.58708614
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789828188285902142, guid: 14546d729775e0840af03d3ec929a970,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7283299381365474205, guid: 14546d729775e0840af03d3ec929a970,
         type: 3}

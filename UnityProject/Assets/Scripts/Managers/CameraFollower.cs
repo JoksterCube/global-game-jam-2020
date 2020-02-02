@@ -14,7 +14,6 @@ public class CameraFollower : MonoBehaviour
     public Vector2 topBottomBoundaries;
 
     private bool going = false;
-    public float sideScrollerSpeed = 2;
     private float sideScrollerProgressionX = -30;
     private float zPos;
 
@@ -31,7 +30,7 @@ public class CameraFollower : MonoBehaviour
     private void Update()
     {
         if (going)
-            sideScrollerProgressionX += sideScrollerSpeed * Time.deltaTime;
+            sideScrollerProgressionX = cam.ViewportToWorldPoint(Vector3.up).x;
         if (sideScrollerProgressionX >= followee.position.x)
         {
             gameStateTracker.Dead();

@@ -312,11 +312,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2049808127341393974, guid: 7438dd0fcdf3fa247a55e00da49c4f15,
         type: 3}
-      propertyPath: trapPrefabs.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 2049808127341393974, guid: 7438dd0fcdf3fa247a55e00da49c4f15,
-        type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1766749139}
@@ -330,17 +325,6 @@ PrefabInstance:
       propertyPath: wallParent
       value: 
       objectReference: {fileID: 583155500}
-    - target: {fileID: 2049808127341393974, guid: 7438dd0fcdf3fa247a55e00da49c4f15,
-        type: 3}
-      propertyPath: maxSize
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2049808127341393974, guid: 7438dd0fcdf3fa247a55e00da49c4f15,
-        type: 3}
-      propertyPath: trapPrefabs.Array.data[10]
-      value: 
-      objectReference: {fileID: 3876962883609955511, guid: 8dab636f43db44d46855b10084b93b95,
-        type: 3}
     - target: {fileID: 2941423918551570993, guid: 7438dd0fcdf3fa247a55e00da49c4f15,
         type: 3}
       propertyPath: m_Name

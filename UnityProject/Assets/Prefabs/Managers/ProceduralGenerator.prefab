@@ -55,6 +55,7 @@ MonoBehaviour:
   - {fileID: 8805342498260120202, guid: 82f902c6fd63c984fa41f9eadeddff24, type: 3}
   - {fileID: 5477988426862872004, guid: 4299ec12f9fa2b0408c187e8103d1c7e, type: 3}
   - {fileID: 1219245693927969577, guid: dea5445d95bc4584fb37c84405ef4e9a, type: 3}
+  - {fileID: 3876962883609955511, guid: 8dab636f43db44d46855b10084b93b95, type: 3}
   wallPrefabs:
   - {fileID: 3970288418136145841, guid: 72d966548fd06604e8cbd77228510be5, type: 3}
   - {fileID: 6188709186843355424, guid: 4e7eec5074f15aa4ea5057ce855ce209, type: 3}
@@ -68,3 +69,5 @@ MonoBehaviour:
   noiseScale: 0.3
   trapParrent: {fileID: 0}
   wallParent: {fileID: 0}
+  minSize: 0.95
+  maxSize: 1.1

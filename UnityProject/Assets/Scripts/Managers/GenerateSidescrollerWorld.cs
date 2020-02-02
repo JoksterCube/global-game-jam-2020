@@ -42,6 +42,9 @@ public class GenerateSidescrollerWorld : MonoBehaviour
             Quaternion randomZRotation = Quaternion.Euler(0, 0, zAngle);
 
             GameObject trap = Instantiate(trapPrefabs[index], position, randomZRotation, trapParrent ?? transform) as GameObject;
+            SelfDestroy sd = trap.AddComponent<SelfDestroy>();
+            sd.target = target;
+            sd.destroyThreshold = generationCheckDistance * 2;
         } while (trapQueue.Count > 0);
     }
     private void FixedUpdate()
@@ -70,7 +73,10 @@ public class GenerateSidescrollerWorld : MonoBehaviour
                 int index = Random.Range(0, wallPrefabs.Count);
                 Vector2 position = new Vector2(x + i * wallUnitLength * 2, (borderBoundaries[j] - Mathf.Pow((-1), j) * wallOffset));
                 Quaternion rotation = Quaternion.Euler(0, 0, 90 * Mathf.Pow((-1), j));
-                Instantiate(wallPrefabs[index], position, rotation, wallParent);
+                GameObject wall = Instantiate(wallPrefabs[index], position, rotation, wallParent) as GameObject;
+                SelfDestroy sd = wall.AddComponent<SelfDestroy>();
+                sd.target = target;
+                sd.destroyThreshold = wallUnitLength + generationCheckDistance;
             }
         }
     }

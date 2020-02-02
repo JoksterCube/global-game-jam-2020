@@ -131,4 +131,3 @@ MonoBehaviour:
   followee: {fileID: 0}
   speed: 0.5
   topBottomBoundaries: {x: -20, y: 20}
-  sideScrollerSpeed: 1.5

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6125598153729951019}
   - component: {fileID: 993469545}
   - component: {fileID: 993469549}
+  - component: {fileID: 1648862959}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -103,7 +104,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
-  image: {fileID: 0}
+  deathPanel: {fileID: 0}
+  fade: {fileID: 0}
+  audioManager: {fileID: 0}
+  delay: 3.5
 --- !u!114 &993469549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +120,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 069db6483021eed42b0241b80bd23b7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dangerWrapper: {fileID: 0}
   dangerIndicator: {fileID: 0}
+  fadeTime: 0.5
   regenerationSpeed: 0.1
   losingSpeed: 0.25
   delayUntilRegeneration: 1
+--- !u!114 &1648862959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6125598153729951016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8dea0a670546544b02fe004dfb1152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuSceneIndex: 0
+  gameSceneIndex: 1

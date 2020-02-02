@@ -24,7 +24,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.045884, y: 0.8500922}
+  m_Size: {x: 8.048035, y: 1.6277592}
   m_EdgeRadius: 0
 --- !u!1001 &555030627118721869
 PrefabInstance:
@@ -138,6 +138,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 10.604
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923080113118673133, guid: 2b115966d4fa470498c429bc7c9a9d19,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923080113118673133, guid: 2b115966d4fa470498c429bc7c9a9d19,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923080113118673133, guid: 2b115966d4fa470498c429bc7c9a9d19,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b115966d4fa470498c429bc7c9a9d19, type: 3}

@@ -14,7 +14,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.08546251, y: 0}
-  m_Size: {x: 1.4740454, y: 2.031804}
+  m_Size: {x: 2.7182007, y: 3.7467308}
   m_Direction: 0
 --- !u!1001 &6105168299609970765
 PrefabInstance:
@@ -118,6 +118,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -37.556
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923080113118673133, guid: 2b115966d4fa470498c429bc7c9a9d19,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923080113118673133, guid: 2b115966d4fa470498c429bc7c9a9d19,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923080113118673133, guid: 2b115966d4fa470498c429bc7c9a9d19,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b115966d4fa470498c429bc7c9a9d19, type: 3}

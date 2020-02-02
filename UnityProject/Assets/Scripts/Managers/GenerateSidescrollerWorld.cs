@@ -22,6 +22,9 @@ public class GenerateSidescrollerWorld : MonoBehaviour
     public Transform trapParrent;
     public Transform wallParent;
 
+    public float minSize = .95f;
+    public float maxSize = 1.35f;
+
     private Queue<Vector2> trapQueue;
     private float nextSpawnFromX = 0;
 
@@ -39,9 +42,11 @@ public class GenerateSidescrollerWorld : MonoBehaviour
             Vector2 position = trapQueue.Dequeue();
             int index = Random.Range(0, trapPrefabs.Count);
             float zAngle = Random.Range(-180, 180);
+            Vector3 size = Vector3.one * Random.Range(minSize, maxSize);
             Quaternion randomZRotation = Quaternion.Euler(0, 0, zAngle);
 
             GameObject trap = Instantiate(trapPrefabs[index], position, randomZRotation, trapParrent ?? transform) as GameObject;
+            trap.transform.localScale = size;
             SelfDestroy sd = trap.AddComponent<SelfDestroy>();
             sd.target = target;
             sd.destroyThreshold = generationCheckDistance;

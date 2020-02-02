@@ -44,7 +44,7 @@ public class GenerateSidescrollerWorld : MonoBehaviour
             GameObject trap = Instantiate(trapPrefabs[index], position, randomZRotation, trapParrent ?? transform) as GameObject;
             SelfDestroy sd = trap.AddComponent<SelfDestroy>();
             sd.target = target;
-            sd.destroyThreshold = generationCheckDistance * 2;
+            sd.destroyThreshold = generationCheckDistance;
         } while (trapQueue.Count > 0);
     }
     private void FixedUpdate()

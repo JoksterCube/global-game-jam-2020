@@ -129,7 +129,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followee: {fileID: 0}
-  speed: 1
-  useCorners: 0
-  topLeftCorner: {x: -25, y: 20}
-  bottomRightCorner: {x: 25, y: -20}
+  speed: 0.5
+  topBottomBoundaries: {x: -20, y: 20}
+  sideScrollerSpeed: 1.5

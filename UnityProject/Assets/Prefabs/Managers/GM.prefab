@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b4e4a67699df0b409f5331fc69fdbfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 200
-  range: 5
+  force: 250
+  range: 7.5
   rippleCount: 3
   rippleTime: 2
   rippleDelay: 0.5
@@ -102,6 +102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c9d513509576eb4bac20a00c140b7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  image: {fileID: 0}
 --- !u!114 &993469549
 MonoBehaviour:
   m_ObjectHideFlags: 0

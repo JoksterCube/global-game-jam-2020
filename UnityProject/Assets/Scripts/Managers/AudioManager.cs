@@ -17,5 +17,12 @@ public class AudioManager : MonoBehaviour
 
         return rippleSounds[index];
     }
+
+    public void PlayDeath()
+    {
+        musicSource.clip = deathClip;
+        musicSource.loop = false;
+        musicSource.Play();
+    }
 }
 

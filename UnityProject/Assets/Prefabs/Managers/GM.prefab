@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 993469545}
   - component: {fileID: 993469549}
   - component: {fileID: 1648862959}
+  - component: {fileID: 6125598152667705922}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -140,3 +141,97 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuSceneIndex: 0
   gameSceneIndex: 1
+--- !u!114 &6125598152667705922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6125598153729951016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c4dc7677403ac4aabe99198ffd03d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomFacts:
+  - 'Turtles think jellyfish are delicious. '
+  - 'Turtles are the oceans'' lawnmowers. '
+  - 'Turtles cannot retract into their shell like other turtles. '
+  - 'Sea turtles cannot retract their flippers and head into their shells. '
+  - 'Turtles once shared the planet with T-Rex and other dinosaurs. '
+  - 'Turtles can hold their breath for five hours underwater. '
+  - 'Turtles live to about 100 years. '
+  - 'Even though turtles are marine animals, some of their natural predators include
+    dogs who dig up their eggs buried in the sand. '
+  - 'All tortoises are actually turtles and calling a tortoise a turtle is not wrong. '
+  - 'In the Amazon, butterflies will drink the tears of turtles to provide necessary
+    sodium in their diet. '
+  - 'In Kenya, a turtle adopted a hippo that was abandoned after a tsunami. '
+  - "May 23 is celebrated as the \u201CWorld Turtle Day\u201D. A day to bring attention
+    to, increase knowledge of and respect for turtles and tortoises "
+  - 'In Jurassic Park, the velociraptor sounds are actually turtles having sex. '
+  - 'There is a medical code for being struck by a turtle. '
+  - "Pet turtles in the U.S. must be at least 4 inches long so children can\u2019t
+    fit them in their mouths and contract salmonellosis. "
+  - 'Snapping turtles evolved to have the snapping defense because they are too big
+    to hide inside their shells like other turtles. '
+  - "A 100-year-old turtle\u2019s organs are indistinguishable from those of an adolescent
+    turtle. "
+  - "The design of turtles\u2019 shells is much like that of an insect's wings: A
+    line of hexagons bounded by pentagons, leading to straight edges. "
+  - 'Turtles start out as mostly carnivorous and eventually become omnivorous. '
+  - 'Turtles do not wear a shell. The shell is part of their spine. '
+  - 'Turtles have three ears: one on either side of the head and a third on the nose. '
+  - 'Turtles are more closely related to birds than they are to lizards and snakes. '
+  - 'People in China carry around live turtles as keychains. The turtles are in sealed
+    containers with water and key rings attached. '
+  - 'Some species of turtles can climb trees. '
+  - 'Turtles can hibernate underwater for months during winter, breathing through
+    their tails. '
+  - 'Turtles manned the first successful circumlunar mission by the USSR. '
+  - "Antarctica is the only continent turtles don\u2019t live on. "
+  - 'Turtles can drown. '
+  - 'Even though they seem to stay underwater for huge amounts of time, turtles can
+    definitely drown. Anything without gills can drown! '
+  - 'Turtles could (hypothetically) give you a high five. '
+  - 'Freshwater on earth is only 2.5% of the total water when 70% of the earth''s
+    surface is covered by water. '
+  - 'Around 70% of industrial waste is dumped into the water. '
+  - '80% of the water pollution is caused due to domestic sewage. '
+  - 'More than 6 billion pounds of garbage, mainly plastic end up in the oceans every
+    year. '
+  - 'Contaminated water is the main cause of various diseases such as cholera and
+    typhus. '
+  - '15 million children under the age of five years die every year from diseases
+    caused by drinking contaminated water. '
+  - 'On average 250 million people succumb each year from diseases caused by contaminated
+    water. '
+  - 'Almost 2.5 billion people lack access to valuable health conditions. '
+  - 'The nuclear crisis created by the tsunami of 2011, unleashed 11 million liters
+    of radioactive water into the Pacific Ocean. '
+  - 'Asia has the highest number of contaminated rivers than any other continent,
+    mainly of bacteria from human waste. '
+  - 'Almost two million tons of human waste are exposed daily to water. '
+  - 'The Ganges river in India is considered the most polluted river in the world
+    and contains dirt, garbage, dead animals and humans. '
+  - 'Underground Bangladeshi water is contaminated with arsenic, which is highly
+    toxic, poisonous and carcinogenic. '
+  - '20% of groundwater in China which are used as drinking water contaminated with
+    carcinogens. '
+  - 'In America 40% of rivers and 46% of the lakes are polluted and unsuitable for
+    swimming, fishing or any other activity. '
+  - 'Every year, more people die from unsafe water than from all forms of violence,
+    including war. '
+  - 'Only 12 percent of oil that is leaked into the ocean is the result of spills
+    - the rest comes from land; '
+  - 'Oil is more harmful to the ocean''s ecosystem than waste and trash; '
+  - 'The most common element found in the world''s oceans is plastic, but there are
+    also fishing gear and nets, and cigarette buts; '
+  bubbleText: {fileID: 0}
+  bubble: {fileID: 0}
+  minTime: 5
+  maxTime: 10
+  delay: 6
+  initialWait: 5
+  alpha: 0.75
+  fadeTime: 0.5

@@ -824,6 +824,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7495290618340048225, guid: f7d99ac7030cc024cb093f92f96240d7,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1766749139}
     - target: {fileID: 7568731002725467328, guid: f7d99ac7030cc024cb093f92f96240d7,
         type: 3}
       propertyPath: target
@@ -831,6 +836,30 @@ PrefabInstance:
       objectReference: {fileID: 1766749139}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7d99ac7030cc024cb093f92f96240d7, type: 3}
+--- !u!114 &4497482799174981398 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3804188496680017522, guid: f7d99ac7030cc024cb093f92f96240d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 4497482799174981397}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4497482799174981399 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3598958250906009193, guid: f7d99ac7030cc024cb093f92f96240d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 4497482799174981397}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6125598152667705920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -862,6 +891,16 @@ PrefabInstance:
       propertyPath: dangerIndicator
       value: 
       objectReference: {fileID: 585927240}
+    - target: {fileID: 6125598152667705922, guid: 71c1fc3dd4e3e1041aaacb007765c173,
+        type: 3}
+      propertyPath: bubbleText
+      value: 
+      objectReference: {fileID: 4497482799174981399}
+    - target: {fileID: 6125598152667705922, guid: 71c1fc3dd4e3e1041aaacb007765c173,
+        type: 3}
+      propertyPath: bubble
+      value: 
+      objectReference: {fileID: 4497482799174981398}
     - target: {fileID: 6125598153729951016, guid: 71c1fc3dd4e3e1041aaacb007765c173,
         type: 3}
       propertyPath: m_Name

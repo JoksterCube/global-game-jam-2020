@@ -28,6 +28,7 @@ public class GenerateSidescrollerWorld : MonoBehaviour
     private Queue<Vector2> trapQueue = new Queue<Vector2>();
     private float nextSpawnFromX = 0;
 
+    public bool useThreads = true;
     private void Update()
     {
         if (trapQueue.Count <= 0)
@@ -58,8 +59,13 @@ public class GenerateSidescrollerWorld : MonoBehaviour
     }
     public void StartNewGeneration()
     {
-        Thread t = new Thread(GenerateChunk);
-        t.Start(nextSpawnFromX);
+        if (useThreads)
+        {
+            Thread t = new Thread(GenerateChunk);
+            t.Start(nextSpawnFromX);
+        }
+        else
+            GenerateChunk(nextSpawnFromX);
         GenerateWalls(nextSpawnFromX);
         nextSpawnFromX += generationDistance;
     }

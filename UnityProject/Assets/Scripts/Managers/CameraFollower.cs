@@ -40,7 +40,7 @@ public class CameraFollower : MonoBehaviour
         float half_y = y / 2;
 
         Vector2 targetPosition = followee.position;
-        targetPosition.x = targetPosition.x < sideScrollerProgressionX + half_x ? sideScrollerProgressionX + half_x : targetPosition.x;
+        //targetPosition.x = targetPosition.x < sideScrollerProgressionX + half_x ? sideScrollerProgressionX + half_x : targetPosition.x;
 
         targetPosition.y = targetPosition.y < topBottomBoundaries.x + half_y ? topBottomBoundaries.x + half_y : targetPosition.y;
         targetPosition.y = targetPosition.y > topBottomBoundaries.y - half_y ? topBottomBoundaries.y - half_y : targetPosition.y;

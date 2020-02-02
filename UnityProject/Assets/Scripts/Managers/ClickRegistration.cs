@@ -21,27 +21,36 @@ public class ClickRegistration : MonoBehaviour
 
     private void Update()
     {
-        if (!dead && Input.GetKeyDown(KeyCode.Mouse0))
+        if (dead) return;
+
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+            Actions(Input.mousePosition);
+        else if (Input.touchCount > 0)
         {
-            if (first)
+            for (int i = 0; i < Input.touchCount; ++i)
             {
-                cameraFollower.StartCamera();
-                first = false;
+                Touch touch = Input.GetTouch(i);
+                if (touch.phase == TouchPhase.Began)
+                    Actions(touch.position);
             }
-            Vector2 wavePosition = Coordinates();
-            if (log)
-                Debug.Log("Koordinatės:" + wavePosition);
-            objectMover.StartWaveAtPosition(wavePosition);
         }
     }
 
-    public Vector2 Coordinates()
+    private void Actions(Vector2 inputPosition)
     {
-        var mousePos = Input.mousePosition;
-        Vector2 p = cam.ScreenToWorldPoint(mousePos);
-
-        return p;
+        if (first)
+        {
+            cameraFollower.StartCamera();
+            first = false;
+        }
+        Vector2 wavePosition = Coordinates(inputPosition);
+        if (log)
+            Debug.Log("Koordinatės:" + wavePosition);
+        objectMover.StartWaveAtPosition(wavePosition);
     }
+
+    public Vector2 Coordinates(Vector2 screenPos) => cam.ScreenToWorldPoint(screenPos);
 
     public void Dead() => dead = true;
 }

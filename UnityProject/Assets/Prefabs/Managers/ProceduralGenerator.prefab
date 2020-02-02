@@ -43,3 +43,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afe86d8d8792b354f9a0877d3486723a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  trapPrefabs:
+  - {fileID: 7177196031903202429, guid: ce611fc8bbda8d04f8c9382d09f437d3, type: 3}
+  - {fileID: 4511658860837769011, guid: 4ff8829121b8d984993333cf086a8fea, type: 3}
+  - {fileID: 4083406612493976493, guid: a9845928e8f6c684a821f0ab99547fd5, type: 3}
+  - {fileID: 4891355791533383721, guid: bb3880675a2dfd44885953c5b500f684, type: 3}
+  - {fileID: 4486916897637509668, guid: fad9acfc854885247850574773cc9b7b, type: 3}
+  - {fileID: 911590433711833937, guid: a4f49e59c2a547c4689c829e92579c58, type: 3}
+  - {fileID: 4111174529028322920, guid: b42441057bd3ac2428596b9ec2c7d671, type: 3}
+  - {fileID: 8805342498260120202, guid: 82f902c6fd63c984fa41f9eadeddff24, type: 3}
+  - {fileID: 5477988426862872004, guid: 4299ec12f9fa2b0408c187e8103d1c7e, type: 3}
+  - {fileID: 1219245693927969577, guid: dea5445d95bc4584fb37c84405ef4e9a, type: 3}
+  borderBoundaries: {x: -20, y: 20}
+  generationDistance: 30
+  generationCheckDistance: 10
+  checkStep: 2.5
+  spawnThreshold: 0.7
+  noiseScale: 0.3

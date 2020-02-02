@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 200
-  range: 10
+  range: 5
   rippleCount: 3
   rippleTime: 2
   rippleDelay: 0.5
@@ -116,5 +116,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dangerIndicator: {fileID: 0}
   regenerationSpeed: 0.1
-  losingSpeed: 0.33
+  losingSpeed: 0.25
   delayUntilRegeneration: 1

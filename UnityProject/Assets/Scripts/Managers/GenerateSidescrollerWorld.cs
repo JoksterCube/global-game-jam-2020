@@ -16,6 +16,7 @@ public class GenerateSidescrollerWorld : MonoBehaviour
     public float spawnThreshold = .5f;
     public float noiseScale = 2;
 
+    public Transform trapParrent;
 
     private Queue<Vector2> queue;
     private float nextSpawnFromX = 0;
@@ -24,10 +25,6 @@ public class GenerateSidescrollerWorld : MonoBehaviour
     {
         queue = new Queue<Vector2>();
     }
-    //private void Start()
-    //{
-    //    StartNewGeneratio();
-    //}
 
     private void Update()
     {
@@ -40,7 +37,7 @@ public class GenerateSidescrollerWorld : MonoBehaviour
             float zAngle = Random.Range(-180, 180);
             Quaternion randomZRotation = Quaternion.Euler(0, 0, zAngle);
 
-            GameObject trap = Instantiate(trapPrefabs[index], position, randomZRotation, transform) as GameObject;
+            GameObject trap = Instantiate(trapPrefabs[index], position, randomZRotation, trapParrent ?? transform) as GameObject;
         } while (queue.Count > 0);
     }
     private void FixedUpdate()

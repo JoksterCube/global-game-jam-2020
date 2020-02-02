@@ -25,17 +25,12 @@ public class GenerateSidescrollerWorld : MonoBehaviour
     public float minSize = .95f;
     public float maxSize = 1.35f;
 
-    private Queue<Vector2> trapQueue;
+    private Queue<Vector2> trapQueue = new Queue<Vector2>();
     private float nextSpawnFromX = 0;
-
-    private void Awake()
-    {
-        trapQueue = new Queue<Vector2>();
-    }
 
     private void Update()
     {
-        if (trapQueue is null || trapQueue.Count <= 0)
+        if (trapQueue.Count <= 0)
             return;
         do
         {

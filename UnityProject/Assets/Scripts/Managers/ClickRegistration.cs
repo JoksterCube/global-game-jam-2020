@@ -12,6 +12,7 @@ public class ClickRegistration : MonoBehaviour
 
     private CameraFollower cameraFollower;
     private ObjectMover objectMover;
+    private bool dead = false;
     private void Awake()
     {
         objectMover = GetComponent<ObjectMover>();
@@ -20,7 +21,7 @@ public class ClickRegistration : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (!dead && Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (first)
             {
@@ -42,4 +43,5 @@ public class ClickRegistration : MonoBehaviour
         return p;
     }
 
+    public void Dead() => dead = true;
 }

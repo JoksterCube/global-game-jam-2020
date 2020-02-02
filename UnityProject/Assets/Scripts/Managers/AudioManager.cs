@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip victoryClip;
 
     public AudioSource musicSource;
+    public AudioSource soundEffects;
 
     public AudioClip GetRippleSound()
     {
@@ -23,6 +24,12 @@ public class AudioManager : MonoBehaviour
         musicSource.clip = deathClip;
         musicSource.loop = false;
         musicSource.Play();
+    }
+
+    public void PlayButton()
+    {
+        soundEffects.clip = GetRippleSound();
+        soundEffects.Play();
     }
 }
 

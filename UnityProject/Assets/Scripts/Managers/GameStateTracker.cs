@@ -13,11 +13,15 @@ public class GameStateTracker : MonoBehaviour
     public Fade fade;
 
     public AudioManager audioManager;
-
+    private ClickRegistration clickRegistration;
     public float delay = 3;
 
 
     private bool deathHasStarted = false;
+    private void Awake()
+    {
+        clickRegistration = GetComponent<ClickRegistration>();
+    }
     private void Update()
     {
         if (currentState == GameStates.Lose && !deathHasStarted)
@@ -35,6 +39,7 @@ public class GameStateTracker : MonoBehaviour
     public void Dead()
     {
         currentState = GameStates.Lose;
+        clickRegistration.Dead();
     }
 
     private void ShowDeathPanel()

@@ -15,4 +15,6 @@ public class SceneLoader : MonoBehaviour
 
     public void PlayGame() => LoadScene(gameSceneIndex);
     public void PlayMenu() => LoadScene(menuSceneIndex);
+
+    public void Exit() => Application.Quit();
 }

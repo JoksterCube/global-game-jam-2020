@@ -229,9 +229,9 @@ MonoBehaviour:
     also fishing gear and nets, and cigarette buts; '
   bubbleText: {fileID: 0}
   bubble: {fileID: 0}
-  minTime: 5
-  maxTime: 10
+  minTime: 7
+  maxTime: 18
   delay: 6
-  initialWait: 5
+  initialWait: 10
   alpha: 0.75
   fadeTime: 0.5

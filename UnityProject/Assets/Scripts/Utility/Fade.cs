@@ -7,7 +7,7 @@ public class Fade : MonoBehaviour
 {
     public Image fadeImage;
 
-    public float fadeSpeed = 5;
+    public float fadeSpeed = 3;
     [Range(0, 1)]
     public int startFade = 1;
     public bool fadeOnStart = true;

@@ -17,6 +17,10 @@ public class MovableObject : MonoBehaviour
         ObjectMover.waveDelegate -= OnWave;
         ObjectMover.waveDelegate += OnWave;
     }
+    private void OnDestroy()
+    {
+        ObjectMover.waveDelegate -= OnWave;
+    }
     private void OnWave(Vector2 position, float force, float range, AnimationCurve waveStrenghCurve, float distance, int id)
     {
         if (ignoreIDs.Contains(id))

@@ -312,6 +312,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2049808127341393974, guid: 7438dd0fcdf3fa247a55e00da49c4f15,
         type: 3}
+      propertyPath: wallPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049808127341393974, guid: 7438dd0fcdf3fa247a55e00da49c4f15,
+        type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1766749139}
@@ -320,6 +325,23 @@ PrefabInstance:
       propertyPath: trapParrent
       value: 
       objectReference: {fileID: 559151612}
+    - target: {fileID: 2049808127341393974, guid: 7438dd0fcdf3fa247a55e00da49c4f15,
+        type: 3}
+      propertyPath: wallPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 3970288418136145841, guid: 72d966548fd06604e8cbd77228510be5,
+        type: 3}
+    - target: {fileID: 2049808127341393974, guid: 7438dd0fcdf3fa247a55e00da49c4f15,
+        type: 3}
+      propertyPath: wallPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 6188709186843355424, guid: 4e7eec5074f15aa4ea5057ce855ce209,
+        type: 3}
+    - target: {fileID: 2049808127341393974, guid: 7438dd0fcdf3fa247a55e00da49c4f15,
+        type: 3}
+      propertyPath: wallParent
+      value: 
+      objectReference: {fileID: 583155500}
     - target: {fileID: 2941423918551570993, guid: 7438dd0fcdf3fa247a55e00da49c4f15,
         type: 3}
       propertyPath: m_Name

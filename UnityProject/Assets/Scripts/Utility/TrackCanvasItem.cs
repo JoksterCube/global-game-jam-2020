@@ -14,6 +14,9 @@ public class TrackCanvasItem : MonoBehaviour
     public Transform target;
     public Vector2 offset;
 
+    public bool useSlerp = false;
+    public float speed = 1;
+
     private Vector2 uiOffset;
     private void Awake()
     {
@@ -29,6 +32,7 @@ public class TrackCanvasItem : MonoBehaviour
     private void Update()
     {
         MoveToTargetPosition();
+
     }
 
     private void MoveToTargetPosition()
@@ -36,6 +40,10 @@ public class TrackCanvasItem : MonoBehaviour
         Vector2 targetPosition = target.position;
         Vector2 viewportPosition = cam.WorldToViewportPoint(targetPosition);
         Vector2 proportionalPosition = new Vector2(viewportPosition.x * canvasRectTransform.sizeDelta.x, viewportPosition.y * canvasRectTransform.sizeDelta.y);
-        rectTransform.localPosition = proportionalPosition - uiOffset + offset;
+        Vector2 pos = proportionalPosition - uiOffset + offset;
+        if (useSlerp)
+            rectTransform.localPosition = Vector3.Slerp(rectTransform.localPosition, pos, speed * Time.deltaTime);
+        else
+            rectTransform.localPosition = pos;
     }
 }

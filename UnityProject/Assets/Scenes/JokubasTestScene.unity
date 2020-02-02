@@ -430,6 +430,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turtoise
       objectReference: {fileID: 0}
+    - target: {fileID: 9082358502896803890, guid: 7f0fb2d781671f8459a0eb274f29833e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f0fb2d781671f8459a0eb274f29833e, type: 3}
 --- !u!1001 &1582406825363180255
